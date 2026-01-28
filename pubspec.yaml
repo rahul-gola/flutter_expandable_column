@@ -2,7 +2,7 @@ name: flutter_expandable_column
 description: "An expandable Flutter column widget that supports scrolling while allowing Expanded and Spacer widgets. Perfect for responsive layouts that need to fill available space."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 repository: https://github.com/rahul-gola/flutter_expandable_column
-version: 0.0.3
+version: 0.0.4
 
 topics:
   - flutter
@@ -18,6 +18,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  meta: ^1.17.0
 
 dev_dependencies:
   flutter_test:

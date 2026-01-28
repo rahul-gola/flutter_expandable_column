@@ -152,16 +152,20 @@ class ExpandableColumn extends StatelessWidget {
       primary: primary,
       reverse: reverse,
       clipBehavior: clipBehavior,
-      child: Flex(
-        direction: Axis.vertical,
-        mainAxisAlignment: mainAxisAlignment,
-        mainAxisSize: mainAxisSize,
-        crossAxisAlignment: crossAxisAlignment,
-        textDirection: textDirection,
-        verticalDirection: verticalDirection,
-        textBaseline: textBaseline,
-        children: children,
-      ),
+      child: _child,
+    );
+  }
+
+  Widget get _child {
+    return Flex(
+      direction: Axis.vertical,
+      mainAxisAlignment: mainAxisAlignment,
+      mainAxisSize: mainAxisSize,
+      crossAxisAlignment: crossAxisAlignment,
+      textDirection: textDirection,
+      verticalDirection: verticalDirection,
+      textBaseline: textBaseline,
+      children: children,
     );
   }
 }
